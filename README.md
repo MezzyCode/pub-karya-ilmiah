@@ -73,3 +73,24 @@ bun run preview
 ```
 
 Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+
+## Modules and Libraries
+
+This project uses certain Modules and Libraries which is listed below.
+
+### UI Framework
+
+[Vuetify Nuxt Modules](https://vuetify-nuxt-module.netlify.app/).
+
+### Icons
+
+UnoCSS Preset Icons with [Tabler icon-set](http://icon-sets.iconify.design/tabler).
+Follow the following conventions to use the icons.
+
+* `<i>-<tabler>:<icon-name>`
+
+For Example:
+
+```html
+  <v-icon class="i-tabler:2fa"/>
+```
