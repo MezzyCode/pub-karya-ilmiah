@@ -7,7 +7,21 @@ export default defineNuxtConfig({
   vuetify: {
     vuetifyOptions: {
       theme: {
-        defaultTheme: 'dark'
+        defaultTheme: 'reseaVueBase',
+        themes: {
+          reseaVueBase: {
+            dark: true,
+            colors: {
+              primary: '#39762e',
+              secondary: '#6b2e76',
+            }
+          }
+        },
+        variations: {
+          colors: ['primary', 'secondary'],
+          lighten: 2,
+          darken: 2,
+        },
       }
     }
   },

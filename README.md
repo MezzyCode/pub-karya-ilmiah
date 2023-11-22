@@ -80,11 +80,11 @@ This project uses certain Modules and Libraries which is listed below.
 
 ### UI Framework
 
-[Vuetify Nuxt Modules](https://vuetify-nuxt-module.netlify.app/).
+[Vuetify Nuxt Modules](https://vuetify-nuxt-module.netlify.app).
 
 ### Icons
 
-UnoCSS Preset Icons with [Tabler icon-set](http://icon-sets.iconify.design/tabler).
+UnoCSS Preset Icons with [MDI icon-set](https://icon-sets.iconify.design/mdi).
 Follow the following conventions to use the icons.
 
 * `<i>-<tabler>:<icon-name>`

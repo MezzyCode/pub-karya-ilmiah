@@ -1,92 +1,77 @@
 <script setup lang="js">
 const heroSlogans = [
   'Berkarya, Berbagi, Bertumbuh dengan ReseaVue',
-  // Add more slogans as needed
+  'Slogan 2',
+  'Slogan 3',
+  'Slogan 4',
 ];
 </script>
 
 <template>
   <div>
     <!-- Hero Section -->
-    <v-container fluid>
-      <v-row align="center">
-        <v-col>
-          <v-img src="/hero-image.jpg" alt="Hero Image" height="400px">
-            <v-row class="fill-height align-center">
-              <v-col>
-                <v-carousel cycle hide-delimiters>
-                  <v-carousel-item v-for="slogan in heroSlogans" :key="slogan">
-                    <v-row justify="center">
-                      <v-col>
-                        <v-card class="pa-5" color="rgba(0, 0, 0, 0.5)">
-                          <v-text class="white--text text-h2">{{ slogan }}</v-text>
-                        </v-card>
-                      </v-col>
-                    </v-row>
-                  </v-carousel-item>
-                </v-carousel>
+    <v-container fluid class="pa-0">
+      <div>
+        <v-img src="/hero-image.jpg" alt="Hero Image" height="400px">
+          <v-row class="fill-height align-center">
+            <v-col>
+              <v-carousel cycle hide-delimiters>
+                <v-carousel-item v-for="slogan in heroSlogans" :key="slogan">
+                  <v-row justify="center">
+                    <v-col>
+                      <v-card class="pa-5" color="rgba(0, 0, 0, 0.5)">
+                        <v-text class="white--text text-h2">{{ slogan }}</v-text>
+                      </v-card>
+                    </v-col>
+                  </v-row>
+                </v-carousel-item>
+              </v-carousel>
+            </v-col>
+          </v-row>
+        </v-img>
+      </div>
+      <v-sheet class="d-flex align-center justify-center flex-wrap text-center pa-4">
+        <v-row>
+          <v-col cols="12">
+            <div class="mx-auto" style="max-width: 600px;">
+              <h2 class="mb-4">Kenapa ReseaVue Berbeda</h2>
+              <p class="text-body-2 mb-4">
+                ReseaVue lahir dari keinginan untuk memberdayakan mahasiswa dalam berbagi
+                pengetahuan mereka dengan dunia, sambil memastikan bahwa setiap karya ilmiah diakui sebanding dengan
+                kualitas dan signifikansinya.
+              </p>
+              <v-btn color="primary">Ayo Coba Sekarang!</v-btn>
+            </div>
+          </v-col>
+          <v-col>
+            <v-row>
+              <v-col cols="12" md="6">
+                <div>
+                  <h2 class="mb-4">Memudahkan Publikasi Ilmiah</h2>
+                  <p class="text-body-2 mb-4">
+                    Publikasikan karya ilmiah Anda dengan mudah dan dapatkan pengakuan yang sebanding.
+                  </p>
+                </div>
+                <div>
+                  <h2 class="mb-4">Membantu Dokumentasi</h2>
+                  <p class="text-body-2 mb-4">
+                    Manfaatkan ReseaVue untuk pengelolaan karya ilmiah yang efisien oleh dosen dan BAAK.
+                  </p>
+                </div>
+                <div>
+                  <h2 class="mb-4">Mendorong Pertukaran Ide</h2>
+                  <p class="text-body-2 mb-4">
+                    ReseaVue diciptakan untuk memfasilitasi pertukaran pengetahuan dan kolaborasi di antara mahasiswa.
+                  </p>
+                </div>
+              </v-col>
+              <v-col cols="12" md="6">
+                <h2>Image Here</h2>
               </v-col>
             </v-row>
-          </v-img>
-        </v-col>
-      </v-row>
-    </v-container>
-
-    <!-- Main Features Section -->
-    <v-container>
-      <v-row>
-        <v-col>
-          <v-card>
-            <v-card-title class="text-h4">Main Feature: Memudahkan Publikasi Ilmiah</v-card-title>
-            <v-card-text>
-              Publikasikan karya ilmiah Anda dengan mudah dan dapatkan pengakuan yang sebanding.
-            </v-card-text>
-          </v-card>
-        </v-col>
-        <!-- Add similar v-col blocks for other main features -->
-      </v-row>
-    </v-container>
-
-    <!-- Benefits Section -->
-    <v-container>
-      <v-row>
-        <v-col>
-          <v-card>
-            <v-card-title class="text-h4">Keuntungan ReseaVue</v-card-title>
-            <v-card-text>
-              Manfaatkan ReseaVue untuk pengelolaan karya ilmiah yang efisien oleh dosen dan BAAK.
-            </v-card-text>
-          </v-card>
-        </v-col>
-        <!-- Add similar v-col blocks for other benefits -->
-      </v-row>
-    </v-container>
-
-    <!-- About ReseaVue Section -->
-    <v-container>
-      <v-row>
-        <v-col>
-          <v-card>
-            <v-card-title class="text-h4">Tentang ReseaVue</v-card-title>
-            <v-card-text>
-              <v-row>
-                <v-col>
-                  <v-card-title class="text-h5">Vision and Mission</v-card-title>
-                  <v-card-text>
-                    ReseaVue diciptakan untuk memfasilitasi pertukaran pengetahuan dan kolaborasi di antara mahasiswa.
-                  </v-card-text>
-                </v-col>
-                <v-col>
-                  <v-card-title class="text-h5">Why ReseaVue</v-card-title>
-                  <v-card-text>
-                    Platform inovatif yang mengutamakan aksesibilitas dan pengakuan karya ilmiah mahasiswa.
-                  </v-card-text>
-                </v-col>
-              </v-row>
-            </v-card-text>
-          </v-card>
-        </v-col>
-      </v-row>
+          </v-col>
+        </v-row>
+      </v-sheet>
     </v-container>
   </div>
 </template>
