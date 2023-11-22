@@ -12,9 +12,10 @@ useHead({
 
 <template>
   <v-app>
-    <Navigation/>
-      <v-main class="d-flex align-center justify-center">
-        <NuxtPage />
-      </v-main>
+    <Navigation />
+    <v-main>
+      <NuxtPage />
+    </v-main>
+    <Footer />
   </v-app>
 </template>
