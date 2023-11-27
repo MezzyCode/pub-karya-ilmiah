@@ -1,13 +1,39 @@
 <script setup lang="js">
 const navLinks = [
-  { title: 'Dashboard', href: '/dashboard', icon: 'i-mdi:view-dashboard' },
-  { title: 'Project Anda', href: '/my-projects', icon: 'i-mdi:bookmark-box-multiple' },
-  { title: 'Profil', href: '/profile', icon: 'i-mdi:account-box' },
-  { title: 'Download', href: '/download', icon: 'i-mdi:folder-download' },
-  { title: 'Upload', href: '/upload', icon: 'i-mdi:folder-upload' },
-  { title: 'Login', icon: 'i-mdi:login' },
-  { title: 'Logout', icon: 'i-mdi:logout' }
+  {
+    title: 'User', props: {
+      prependIcon: 'i-mdi:account',
+      to: '/profile'
+    }
+  },
+  { type: 'divider' },
+  {
+    title: 'Dashboard', props: {
+      prependIcon: 'i-mdi:view-dashboard',
+      to: '/dashboard'
+    }
+  },
+  {
+    title: 'Project Anda', props: {
+      prependIcon: 'i-mdi:bookmark-box-multiple',
+      to: '/my-projects'
+    }
+  },
+  {
+    title: 'Download', props: {
+      prependIcon: 'i-mdi:folder-download',
+      to: '/download'
+    }
+  },
+  {
+    title: 'Upload', props: {
+      prependIcon: 'i-mdi:folder-upload',
+      to: '/upload'
+    }
+  }
 ]
+
+
 const drawer = ref(false)
 const toggleDrawer = () => {
   drawer.value = !drawer.value;
@@ -23,12 +49,11 @@ const toggleDrawer = () => {
     <v-app-bar-nav-icon icon="i-mdi:menu" @click="toggleDrawer" rounded="0" />
   </v-app-bar>
   <v-navigation-drawer v-model="drawer" temporary location="right">
-    <v-list>
-      <v-list-item v-for="(link, i) in navLinks" :key="i" :value="link" :title="link.title" :to="link.href"
-        color="primary">
-        <template v-slot:prepend> <v-icon :icon="link.icon" /> </template>
-      </v-list-item>
+    <v-list :items="navLinks">
     </v-list>
+    <template v-slot:append>
+      <v-btn class="pa-2" block color="primary" rounded="0" prepend-icon="i-mdi:logout">Logout</v-btn>
+    </template>
   </v-navigation-drawer>
 </template>
 

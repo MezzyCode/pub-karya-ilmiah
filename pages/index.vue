@@ -40,7 +40,7 @@ const heroSlogans = [
                 pengetahuan mereka dengan dunia, sambil memastikan bahwa setiap karya ilmiah diakui sebanding dengan
                 kualitas dan signifikansinya.
               </p>
-              <v-btn color="primary">Ayo Coba Sekarang!</v-btn>
+              <v-btn color="primary" to="/search">Ayo Coba Sekarang!</v-btn>
             </div>
           </v-col>
           <v-col>
