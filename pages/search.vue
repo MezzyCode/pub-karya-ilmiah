@@ -151,7 +151,7 @@ export default {
     </v-row>
     <v-row>
       <v-col v-for="project in projects" :key="project.id" cols="4">
-        <v-card class="pb-2">
+        <v-card class="pb-2" :href="`project/${project.id}`">
           <v-card-title v-text="project.projectTitle"></v-card-title>
           <v-card-subtitle> {{ project.language }} | {{ project.framework }} </v-card-subtitle>
           <v-card-text> {{ project.projectDesc }} </v-card-text>

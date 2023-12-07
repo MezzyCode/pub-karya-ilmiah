@@ -1,37 +1,33 @@
 <script setup lang="js">
-const navLinks = [
-  {
-    title: 'User', props: {
-      prependIcon: 'i-mdi:account',
-      to: '/profile'
-    }
-  },
+const userRole = ref('user'); // Set this dynamically based on the user role
+
+const commonLinks = [
+  { title: userRole.value, props: { prependIcon: 'i-mdi:account', to: '/profile' } },
   { type: 'divider' },
-  {
-    title: 'Dashboard', props: {
-      prependIcon: 'i-mdi:view-dashboard',
-      to: '/dashboard'
-    }
-  },
-  {
-    title: 'Project Anda', props: {
-      prependIcon: 'i-mdi:bookmark-box-multiple',
-      to: '/my-projects'
-    }
-  },
-  {
-    title: 'Download', props: {
-      prependIcon: 'i-mdi:folder-download',
-      to: '/download'
-    }
-  },
-  {
-    title: 'Upload', props: {
-      prependIcon: 'i-mdi:folder-upload',
-      to: '/upload'
-    }
-  }
-]
+  { title: 'Dashboard', props: { prependIcon: 'i-mdi:view-dashboard', to: '/dashboard' } },
+  { title: 'Download', props: { prependIcon: 'i-mdi:folder-download', to: '/download' } },
+];
+
+const roleLinks = {
+  user: [
+    { title: 'Project Anda', props: { prependIcon: 'i-mdi:bookmark-box-multiple', to: '/my-projects' } },
+    { title: 'Upload', props: { prependIcon: 'i-mdi:folder-upload', to: '/upload' } },
+  ],
+  admin: [
+    { title: 'Kelola Akun', props: { prependIcon: 'i-mdi:account-group' } },
+    { title: 'Cek Report', props: { prependIcon: 'i-mdi:file-check' } },
+    { title: 'Kelola Karya Ilmiah', props: { prependIcon: 'i-mdi:file-document-edit' } },
+  ],
+  dosen: [
+    { title: 'Cek Report', props: { prependIcon: 'i-mdi:file-check' } },
+    { title: 'Cek Review', props: { prependIcon: 'i-mdi:eye-check' } },
+  ],
+};
+
+const navLinks = computed(() => {
+  const roleSpecificLinks = roleLinks[userRole.value] || [];
+  return [...commonLinks, { type: 'divider' }, ...roleSpecificLinks];
+});
 
 
 const drawer = ref(false)
