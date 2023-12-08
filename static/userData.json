@@ -1,0 +1,92 @@
+[
+  {
+    "id": 1,
+    "projectTitle": "Web Chat Application",
+    "uploadDate": "2023-01-01",
+    "acceptedDate": "2023-01-10",
+    "language": ["JavaScript", "C"],
+    "framework": "React",
+    "projectDesc": "A real-time web chat application built using React and WebSocket. It allows users to communicate in real-time with features like private messaging and emoji support."
+  },
+  {
+    "id": 2,
+    "projectTitle": "E-commerce Platform",
+    "uploadDate": "2023-02-05",
+    "acceptedDate": "2023-02-15",
+    "language": "Python",
+    "framework": "Django",
+    "projectDesc": "An e-commerce platform developed using Django for backend and JavaScript for frontend. The platform includes features such as product catalog, shopping cart, and order processing."
+  },
+  {
+    "id": 3,
+    "projectTitle": "Portfolio Website",
+    "uploadDate": "2023-03-10",
+    "acceptedDate": "2023-03-20",
+    "language": "TypeScript",
+    "framework": "React",
+    "projectDesc": "Personal portfolio website built with React and TypeScript. The website showcases projects, skills, and provides a way for visitors to contact the owner."
+  },
+  {
+    "id": 4,
+    "projectTitle": "Blog Platform",
+    "uploadDate": "2023-04-15",
+    "acceptedDate": "2023-04-25",
+    "language": "Node.js",
+    "framework": "Express.js",
+    "projectDesc": "A simple blog platform with Node.js backend and Express.js for API. Users can create, edit, and delete blog posts, and the platform supports user authentication."
+  },
+  {
+    "id": 5,
+    "projectTitle": "Task Management App",
+    "uploadDate": "2023-05-20",
+    "acceptedDate": "2023-05-30",
+    "language": "Java",
+    "framework": "Spring Boot",
+    "projectDesc": "Task management application using Java and Spring Boot. The app allows users to create tasks, set deadlines, and mark tasks as completed, helping in effective task organization."
+  },
+  {
+    "id": 6,
+    "projectTitle": "Weather App",
+    "uploadDate": "2023-06-25",
+    "acceptedDate": "2023-07-05",
+    "language": "JavaScript",
+    "framework": "Vue.js",
+    "projectDesc": "Weather application built with Vue.js and consuming a weather API. Users can check the current weather conditions, forecast, and get weather information for specific locations."
+  },
+  {
+    "id": 7,
+    "projectTitle": "Social Media Dashboard",
+    "uploadDate": "2023-08-01",
+    "acceptedDate": "2023-08-10",
+    "language": "JavaScript",
+    "framework": "React",
+    "projectDesc": "Dashboard for managing social media accounts using React. The dashboard integrates with various social media platforms, allowing users to schedule posts and track engagement."
+  },
+  {
+    "id": 8,
+    "projectTitle": "Recipe App",
+    "uploadDate": "2023-09-15",
+    "acceptedDate": "2023-09-25",
+    "language": "Python",
+    "framework": "Flask",
+    "projectDesc": "Recipe application with Python backend using Flask framework. Users can browse recipes, search for specific dishes, and save their favorite recipes for later."
+  },
+  {
+    "id": 9,
+    "projectTitle": "Job Board",
+    "uploadDate": "2023-10-20",
+    "acceptedDate": "2023-10-30",
+    "language": "JavaScript",
+    "framework": "Angular",
+    "projectDesc": "Job board application built with Angular for the frontend. The platform connects job seekers with employers, providing a seamless interface for job postings and applications."
+  },
+  {
+    "id": 10,
+    "projectTitle": "Movie Database",
+    "uploadDate": "2023-11-05",
+    "acceptedDate": "2023-11-15",
+    "language": "JavaScript",
+    "framework": "React",
+    "projectDesc": "Database of movies created with React and fetching data from a movie API. Users can search for movies, view details, and discover new releases in the world of cinema."
+  }
+]

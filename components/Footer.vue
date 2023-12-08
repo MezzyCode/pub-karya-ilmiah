@@ -8,7 +8,7 @@ const icons = [
 </script>
 
 <template>
-  <v-footer class="footer pa-0 d-flex flex-column justify-space-between">
+  <v-footer class="footer pa-0 d-flex flex-column justify-space-between" style="height: 10%;">
     <v-container fluid>
       <v-row justify="space-around">
         <v-col cols="12" md="4" class="footer-item">
